@@ -2,192 +2,215 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title>미드 Friends 소개</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>미드 Friends 소개</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 
-  <style>
-    /* 배너 스타일 설정 */
-    .banner {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      background-image: url("https://i.namu.wiki/i/Hf_7SXS3LUHNdOc3gcHczLxjyntkSny5-OCbaK96EFhMfdLaOyy2imyF12Dv2EBitdHUE1mC_gZsoNbzxvnd_MwFSR5JGPT3V8VRWBMQrU_c9Hn6dPIPNsUFLr_nuU8GchD3IQrafqjiVpfYh7_9YA.webp");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top center;
-      padding: 50px 0;
-      text-align: center;
-    }
+    <style>
+        /* 배너 스타일 설정 */
+        .banner {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-image: url("https://i.namu.wiki/i/Hf_7SXS3LUHNdOc3gcHczLxjyntkSny5-OCbaK96EFhMfdLaOyy2imyF12Dv2EBitdHUE1mC_gZsoNbzxvnd_MwFSR5JGPT3V8VRWBMQrU_c9Hn6dPIPNsUFLr_nuU8GchD3IQrafqjiVpfYh7_9YA.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            padding: 50px 0;
+            text-align: center;
+        }
 
-    /* 텍스트 스타일 설정 */
-    .banner h1 {
-      color: #fff;
-      font-size: 32px;
-    }
+        /* 텍스트 스타일 설정 */
+        .banner h1 {
+            color: #fff;
+            font-size: 32px;
+        }
 
-    .banner p {
-      color: #fff;
-      font-size: 18px;
-      line-height: 1.5;
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        .banner p {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-    /* 캐릭터 소개 스타일 설정 */
-    .character-section {
-      max-width: 800px;
-      margin: 20px auto;
-      text-align: center;
-    }
+        /* 캐릭터 소개 스타일 설정 */
+        .character-section {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
 
-    .character-section h2 {
-      font-size: 24px;
-    }
+        .character-section h2 {
+            font-size: 24px;
+        }
 
-    .character-section ul {
-      list-style: none;
-      padding: 0;
-    }
+        .character-section ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    .character-section li {
-      margin-bottom: 20px;
-    }
+        .character-section li {
+            margin-bottom: 20px;
+        }
 
-    /* 출연진 이미지를 동그라미로 만들기 */
-    .character-section li img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%; /* 동그라미로 만들기 */
-      border: 5px solid #fff; /* 이미지 주위에 흰색 테두리 추가 */
-    }
+        /* 출연진 이미지를 동그라미로 만들기 */
+        .character-section li img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* 동그라미로 만들기 */
+            border: 5px solid #fff; /* 이미지 주위에 흰색 테두리 추가 */
+        }
 
-    /* 음악 재생 버튼 스타일 설정 */
-    #playButton {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; /* 동그라미로 만들기 */
-      border: 5px solid #45a34e; /* 이미지 주위에 흰색 테두리 추가 */
-      position: absolute;
-      top: 30%; /* 상단 여백 조정 */
-      right: 3%;
-      transform: translate(-50%, -50%);
-      cursor: pointer; /* 커서 모양을 손가락 모양으로 설정 */
-      animation: rotate 10s linear infinite; /* rotate 애니메이션 적용 */
-    }
+        /* 음악 재생 버튼 스타일 설정 */
+        #playButton {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 동그라미로 만들기 */
+            border: 5px solid #45a34e; /* 이미지 주위에 흰색 테두리 추가 */
+            position: absolute;
+            top: 30%; /* 상단 여백 조정 */
+            right: 3%;
+            transform: translate(-50%, -50%);
+            cursor: pointer; /* 커서 모양을 손가락 모양으로 설정 */
+            animation: rotate 10s linear infinite; /* rotate 애니메이션 적용 */
+        }
 
-    /* 음악 재생 버튼 이미지 스타일 설정 */
-    #playButton img {
-      width: 100%; /* 이미지 크기 100%로 설정 */
-      height: 100%;
-      border-radius: 50%;
-    }
+        /* 음악 재생 버튼 이미지 스타일 설정 */
+        #playButton img {
+            width: 100%; /* 이미지 크기 100%로 설정 */
+            height: 100%;
+            border-radius: 50%;
+        }
 
-    /* rotate 애니메이션 정의 */
-    @keyframes rotate {
-      0% {
-        transform: translate(-50%, -50%) rotate(0deg); /* 0도 회전 */
-      }
-      100% {
-        transform: translate(-50%, -50%) rotate(360deg); /* 360도 회전 */
-      }
-    }
-  </style>
+        /* rotate 애니메이션 정의 */
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg); /* 0도 회전 */
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg); /* 360도 회전 */
+            }
+        }
+    </style>
 
 </head>
 
 <body>
 <!-- 배너 영역 -->
 <div class="banner">
-  <h1>미드 "Friends" 소개</h1>
-  <p>
-    "Friends"는 1994년부터 2004년까지 방영된 미국의 인기 시트콤으로, 뉴욕 맨하탄의 여섯 친구들의 일상을 그린 작품입니다. 코미디와 드라마를 혼합한 스토리와 유쾌한 대사로 전 세대에 사랑받은
-    작품이며, 지금도 많은 사람들에게 사랑받고 있습니다.
-  </p>
+    <h1>미드 "Friends" 소개</h1>
+    <p>
+        "Friends"는 1994년부터 2004년까지 방영된 미국의 인기 시트콤으로, 뉴욕 맨하탄의 여섯 친구들의 일상을 그린 작품입니다. 코미디와 드라마를 혼합한 스토리와 유쾌한 대사로 전 세대에 사랑받은
+        작품이며, 지금도 많은 사람들에게 사랑받고 있습니다.
+    </p>
 </div>
 
 <!-- 음악 재생 버튼 -->
 <button id="playButton" onclick="toggleMusic()">
-  <img src="coffee.jpeg" alt="Play Music">
+    <img src="coffee.jpeg" alt="Play Music">
 </button>
 
 <!-- 캐릭터 소개 영역 -->
 <div class="character-section">
-  <h2>출연진</h2>
-  <ul>
-    <li>
-      <strong>Tree's Favorite</strong><br>
-      <strong>제니퍼 애니스턴 (Jennifer Aniston) - 레이첼 그린 (Rachel Green) 역</strong><br>
-      <img
-        src="https://i.namu.wiki/i/CrPmaCTFNSaksr-tJI8NCbZ5_k3anLnHRjMOgox4BTGFM-W2X000Pjfc-E6PlV3qHN0UGTj_kGV77rNYDEeTSHskxdMhHuzDi8Ct3wgmrdPLhlFug07WwsvtfI5X3M_SiXF14tg2xpYQoVBKfiuyMg.webp"
-        alt="Rachel Green">
-    </li>
-    <li>
-      <strong>코트니 콕스 (Courteney Cox) - 모니카 걸러 (Monica Geller) 역</strong><br>
-      <img
-        src="https://i.namu.wiki/i/aJsuIaYrtVCM5JMxzs3ECgBncYsGq5dOysy51v_vpaU88F3ZhLsySmE4eJAF5E5z76XiKd-jiPUmbinZqPEUFd1AFSnF3t2t9hAEY82154-t5hje7t_i7LPBFmepsj1L1FbjKWRGbccCZRR2fNzfCQ.webp"
-        alt="Monica Geller">
-    </li>
-    <li>
-      <strong>리사 쿠드로우 (Lisa Kudrow) - 피비 부페 (Phoebe Buffay) 역</strong><br>
-      <img
-        src="https://i.namu.wiki/i/O_AfZAHfsCbqmmbGH3utu0QNEXjo7KjPEaUNq_ViEWVY5sywNVG2koEj6rQ-hZE477T_3RJAdm8KIVcpDJDhTpiIZG_TWfa7Dl9nuHDTUxuiuMiJ1U-lL4h5-Omx0n24QoCTx0C4pwvrzJiTL3vTcg.webp"
-        alt="Phoebe Buffay">
-    </li>
-    <li>
-      <strong>매튜 페리 (Matthew Perry) - 찬들러 빙 (Chandler Bing) 역</strong><br>
-      <img
-        src="https://i.namu.wiki/i/8rXG7pgqZp7CihX9_Hn6U4msDQoF66BvyfhQ_Zu7bTybSQeLA2fp1OQ-jvvJ-RpnskN_xGQrHiancD8zq5sFCgMOkcts0nVtmyXDugmz54lEK7xPLNuuZrmKYhz7SJ6sDCxl0SAlxwEgduX2snhfHg.webp"
-        alt="Chandler Bing">
-    </li>
-    <li>
-      <strong>데이빗 슈위머 (David Schwimmer) - 로스 걸러 (Ross Geller) 역</strong><br>
-      <img
-        src="https://i.namu.wiki/i/QEKsJe6cF7dWdiYQXs0easVrgrXIvZDN-lpndj0TZ-ooC3FhVtckE_9fiigRlaKNbRb6-qXmnESNUOeTWzG0oKRFSBNzhI27VYS1CHeiPNCaD3thPtsoniBhw_Ke6JvXKEr1YS5Cn3Z7beAz355Yag.webp"
-        alt="Ross Geller">
-    </li>
-    <li>
-      <strong>맷 르블랑크 (Matt LeBlanc) - 조이 트리비아니 (Joey Tribbiani) 역</strong><br>
-      <img
-        src="https://i.namu.wiki/i/OscYQ3FI6W5ka34XaGGbKJFot3ytqeY5P8mi4Xk9lTT_iQ7FfX3AQfG7GLZW1ZC9eajDk3sgsyWUlTL5yxEfQIrWfnkdSoPE7jtPIZWsgXDmBKgH8rC9oofF9FT_NYTRTPhYdsJoFZ9VSysiwogOhw.webp"
-        alt="Joey Tribbiani">
-    </li>
-  </ul>
+    <h2>출연진</h2>
+    <ul>
+        <li>
+            <strong>Tree's Favorite</strong><br>
+            <strong>제니퍼 애니스턴 (Jennifer Aniston) - 레이첼 그린 (Rachel Green) 역</strong><br>
+            <img
+                    src="https://i.namu.wiki/i/CrPmaCTFNSaksr-tJI8NCbZ5_k3anLnHRjMOgox4BTGFM-W2X000Pjfc-E6PlV3qHN0UGTj_kGV77rNYDEeTSHskxdMhHuzDi8Ct3wgmrdPLhlFug07WwsvtfI5X3M_SiXF14tg2xpYQoVBKfiuyMg.webp"
+                    alt="Rachel Green">
+        </li>
+        <li>
+            <strong>코트니 콕스 (Courteney Cox) - 모니카 걸러 (Monica Geller) 역</strong><br>
+            <img
+                    src="https://i.namu.wiki/i/aJsuIaYrtVCM5JMxzs3ECgBncYsGq5dOysy51v_vpaU88F3ZhLsySmE4eJAF5E5z76XiKd-jiPUmbinZqPEUFd1AFSnF3t2t9hAEY82154-t5hje7t_i7LPBFmepsj1L1FbjKWRGbccCZRR2fNzfCQ.webp"
+                    alt="Monica Geller">
+        </li>
+        <li>
+            <strong>리사 쿠드로우 (Lisa Kudrow) - 피비 부페 (Phoebe Buffay) 역</strong><br>
+            <img
+                    src="https://i.namu.wiki/i/O_AfZAHfsCbqmmbGH3utu0QNEXjo7KjPEaUNq_ViEWVY5sywNVG2koEj6rQ-hZE477T_3RJAdm8KIVcpDJDhTpiIZG_TWfa7Dl9nuHDTUxuiuMiJ1U-lL4h5-Omx0n24QoCTx0C4pwvrzJiTL3vTcg.webp"
+                    alt="Phoebe Buffay">
+        </li>
+        <li>
+            <strong>매튜 페리 (Matthew Perry) - 찬들러 빙 (Chandler Bing) 역</strong><br>
+            <img
+                    src="https://i.namu.wiki/i/8rXG7pgqZp7CihX9_Hn6U4msDQoF66BvyfhQ_Zu7bTybSQeLA2fp1OQ-jvvJ-RpnskN_xGQrHiancD8zq5sFCgMOkcts0nVtmyXDugmz54lEK7xPLNuuZrmKYhz7SJ6sDCxl0SAlxwEgduX2snhfHg.webp"
+                    alt="Chandler Bing">
+        </li>
+        <li>
+            <strong>데이빗 슈위머 (David Schwimmer) - 로스 걸러 (Ross Geller) 역</strong><br>
+            <img
+                    src="https://i.namu.wiki/i/QEKsJe6cF7dWdiYQXs0easVrgrXIvZDN-lpndj0TZ-ooC3FhVtckE_9fiigRlaKNbRb6-qXmnESNUOeTWzG0oKRFSBNzhI27VYS1CHeiPNCaD3thPtsoniBhw_Ke6JvXKEr1YS5Cn3Z7beAz355Yag.webp"
+                    alt="Ross Geller">
+        </li>
+        <li>
+            <strong>맷 르블랑크 (Matt LeBlanc) - 조이 트리비아니 (Joey Tribbiani) 역</strong><br>
+            <img
+                    src="https://i.namu.wiki/i/OscYQ3FI6W5ka34XaGGbKJFot3ytqeY5P8mi4Xk9lTT_iQ7FfX3AQfG7GLZW1ZC9eajDk3sgsyWUlTL5yxEfQIrWfnkdSoPE7jtPIZWsgXDmBKgH8rC9oofF9FT_NYTRTPhYdsJoFZ9VSysiwogOhw.webp"
+                    alt="Joey Tribbiani">
+        </li>
+    </ul>
+    <strong>
+        <strong>Hi Tree~!
+            200일 기념(?)은 뮤지컬 관람일에 이미 한 것 같기도한데~
+            그래도 근래에 많은 일들이 있었고 그 안에서 우리의 감정들이 요동 쳤던 것 같네..
+            편지를 쓰고 싶었던 요즘인데 오늘 덕분에 이렇게 편지를 쓰게 됐어!
+            <br>
+            이 몇달동안 태영이에게 많은 감정과 태도가 전해진것같아.
+            돌아보니..
+            <br>
+            다시 행신과 똑개로 돌아오는, 그 짧고 묵직했던 일들 안에서 나에게 있던 많은 스트레스가 섞여있었던것 같아!
+            수많은 일들이 스트레스로 느껴진 것 같은 날들인데 그것을 풀어냄에 있어서 태영이한테 많이 전달 된 것 같아 너무 미안한 마음이 들었어.
+            예전이라면 하지 않았을 것 같은 투정이나 빈정거리는 말을 하게 됨에 있어서 그 자체로 보면 시원한 느낌이 들수도있겠다만, 그 상황들을 풀어서 돌아보니.. 내 자신이 너무나 속좁고 나약하다고
+            생각이 드네.
+            그와 동시에 태영이가 넓은 마음으로 품어주고 이해해주는 모습이 떠오르면서 고마운 마음도 들고..
+            <br>
+            나의 일부 모습을 파고들어가보니, 무엇인가 성급하게 추진하는 때에 그 안에서 태영이가 말했던 “가벼움”들이 느껴진 것 같아. 힘들었지만 “어떤 이유에서 였을까…?” 생각해보면 인정하고싶지 않았던
+            나의 많은 단점들.. 그 중 신중하지 않은 태도가 가장 큰 결과를 불러왔던 것 같아.
+            <br>
+            앞으로 “어떻게 하겠다”라는 다짐은 마음속 큰 중심에 남겨두고 종종 꺼내 볼게~!
+            우리의 수많은 날들중 이제 겨우(?) 200이 채워진거라 생각해!!
+            남은 우주공간에 닿아갈 때마다 회피하지 않는 내가 되고싶은데, 태영이와 함께면 너무 재밌을 거라 생각해~~!I tree Tree!</strong>
+    </strong>
 </div>
 
+
 <audio id="bgMusic" loop>
-  <!-- 음악 파일의 URL을 넣어주세요. -->
-  <source src="music.mp3" type="audio/mpeg">
+    <!-- 음악 파일의 URL을 넣어주세요. -->
+    <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  const bgMusic = document.getElementById('bgMusic');
-  const playButton = document.getElementById('playButton');
+    const bgMusic = document.getElementById('bgMusic');
+    const playButton = document.getElementById('playButton');
 
-  function toggleMusic() {
-    if (bgMusic.paused) {
-      bgMusic.play();
-      playButton.innerHTML = '<img src="friends_mirror.jpg" alt="Pause Music">';
-    } else {
-      bgMusic.pause();
-      playButton.innerHTML = '<img src="coffee.jpeg" alt="Play Music">';
+    function toggleMusic() {
+        if (bgMusic.paused) {
+            bgMusic.play();
+            playButton.innerHTML = '<img src="friends_mirror.jpg" alt="Pause Music">';
+        } else {
+            bgMusic.pause();
+            playButton.innerHTML = '<img src="coffee.jpeg" alt="Play Music">';
+        }
     }
-  }
 </script>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -196,15 +219,15 @@
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
-  window.ga = function () {
-    ga.q.push(arguments)
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview')
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
